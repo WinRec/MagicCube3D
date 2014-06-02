@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7976131C193C76D600FF6049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976131B193C76D600FF6049 /* Foundation.framework */; };
+		7976131E193C76D600FF6049 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976131D193C76D600FF6049 /* CoreGraphics.framework */; };
+		79761320193C76D600FF6049 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976131F193C76D600FF6049 /* UIKit.framework */; };
+		79761322193C76D600FF6049 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79761321193C76D600FF6049 /* GLKit.framework */; };
+		79761324193C76D600FF6049 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79761323193C76D600FF6049 /* OpenGLES.framework */; };
+		7976132A193C76D600FF6049 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79761328193C76D600FF6049 /* InfoPlist.strings */; };
+		7976132C193C76D600FF6049 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976132B193C76D600FF6049 /* main.m */; };
+		79761330193C76D600FF6049 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976132F193C76D600FF6049 /* AppDelegate.m */; };
+		79761333193C76D600FF6049 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79761331193C76D600FF6049 /* Main_iPhone.storyboard */; };
+		79761336193C76D600FF6049 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79761334193C76D600FF6049 /* Main_iPad.storyboard */; };
+		79761338193C76D600FF6049 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 79761337193C76D600FF6049 /* Shader.fsh */; };
+		7976133A193C76D600FF6049 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 79761339193C76D600FF6049 /* Shader.vsh */; };
+		7976133D193C76D600FF6049 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7976133C193C76D600FF6049 /* ViewController.m */; };
+		7976133F193C76D600FF6049 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7976133E193C76D600FF6049 /* Images.xcassets */; };
+		79761346193C76D600FF6049 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79761345193C76D600FF6049 /* XCTest.framework */; };
+		79761347193C76D600FF6049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976131B193C76D600FF6049 /* Foundation.framework */; };
+		79761348193C76D600FF6049 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7976131F193C76D600FF6049 /* UIKit.framework */; };
+		79761350193C76D600FF6049 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7976134E193C76D600FF6049 /* InfoPlist.strings */; };
+		79761352193C76D600FF6049 /* MagicCube3DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79761351193C76D600FF6049 /* MagicCube3DTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79761349193C76D600FF6049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79761310193C76D600FF6049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79761317193C76D600FF6049;
+			remoteInfo = MagicCube3D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79761318193C76D600FF6049 /* MagicCube3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicCube3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7976131B193C76D600FF6049 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7976131D193C76D600FF6049 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7976131F193C76D600FF6049 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		79761321193C76D600FF6049 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		79761323193C76D600FF6049 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		79761327193C76D600FF6049 /* MagicCube3D-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicCube3D-Info.plist"; sourceTree = "<group>"; };
+		79761329193C76D600FF6049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7976132B193C76D600FF6049 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7976132D193C76D600FF6049 /* MagicCube3D-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicCube3D-Prefix.pch"; sourceTree = "<group>"; };
+		7976132E193C76D600FF6049 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7976132F193C76D600FF6049 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79761332193C76D600FF6049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		79761335193C76D600FF6049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		79761337193C76D600FF6049 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		79761339193C76D600FF6049 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		7976133B193C76D600FF6049 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7976133C193C76D600FF6049 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7976133E193C76D600FF6049 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		79761344193C76D600FF6049 /* MagicCube3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicCube3DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79761345193C76D600FF6049 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7976134D193C76D600FF6049 /* MagicCube3DTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MagicCube3DTests-Info.plist"; sourceTree = "<group>"; };
+		7976134F193C76D600FF6049 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79761351193C76D600FF6049 /* MagicCube3DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicCube3DTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79761315193C76D600FF6049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761324193C76D600FF6049 /* OpenGLES.framework in Frameworks */,
+				7976131E193C76D600FF6049 /* CoreGraphics.framework in Frameworks */,
+				79761320193C76D600FF6049 /* UIKit.framework in Frameworks */,
+				79761322193C76D600FF6049 /* GLKit.framework in Frameworks */,
+				7976131C193C76D600FF6049 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79761341193C76D600FF6049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761346193C76D600FF6049 /* XCTest.framework in Frameworks */,
+				79761348193C76D600FF6049 /* UIKit.framework in Frameworks */,
+				79761347193C76D600FF6049 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7976130F193C76D600FF6049 = {
+			isa = PBXGroup;
+			children = (
+				79761325193C76D600FF6049 /* MagicCube3D */,
+				7976134B193C76D600FF6049 /* MagicCube3DTests */,
+				7976131A193C76D600FF6049 /* Frameworks */,
+				79761319193C76D600FF6049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79761319193C76D600FF6049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79761318193C76D600FF6049 /* MagicCube3D.app */,
+				79761344193C76D600FF6049 /* MagicCube3DTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7976131A193C76D600FF6049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7976131B193C76D600FF6049 /* Foundation.framework */,
+				7976131D193C76D600FF6049 /* CoreGraphics.framework */,
+				7976131F193C76D600FF6049 /* UIKit.framework */,
+				79761321193C76D600FF6049 /* GLKit.framework */,
+				79761323193C76D600FF6049 /* OpenGLES.framework */,
+				79761345193C76D600FF6049 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79761325193C76D600FF6049 /* MagicCube3D */ = {
+			isa = PBXGroup;
+			children = (
+				7976132E193C76D600FF6049 /* AppDelegate.h */,
+				7976132F193C76D600FF6049 /* AppDelegate.m */,
+				79761331193C76D600FF6049 /* Main_iPhone.storyboard */,
+				79761334193C76D600FF6049 /* Main_iPad.storyboard */,
+				79761337193C76D600FF6049 /* Shader.fsh */,
+				79761339193C76D600FF6049 /* Shader.vsh */,
+				7976133B193C76D600FF6049 /* ViewController.h */,
+				7976133C193C76D600FF6049 /* ViewController.m */,
+				7976133E193C76D600FF6049 /* Images.xcassets */,
+				79761326193C76D600FF6049 /* Supporting Files */,
+			);
+			path = MagicCube3D;
+			sourceTree = "<group>";
+		};
+		79761326193C76D600FF6049 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79761327193C76D600FF6049 /* MagicCube3D-Info.plist */,
+				79761328193C76D600FF6049 /* InfoPlist.strings */,
+				7976132B193C76D600FF6049 /* main.m */,
+				7976132D193C76D600FF6049 /* MagicCube3D-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7976134B193C76D600FF6049 /* MagicCube3DTests */ = {
+			isa = PBXGroup;
+			children = (
+				79761351193C76D600FF6049 /* MagicCube3DTests.m */,
+				7976134C193C76D600FF6049 /* Supporting Files */,
+			);
+			path = MagicCube3DTests;
+			sourceTree = "<group>";
+		};
+		7976134C193C76D600FF6049 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7976134D193C76D600FF6049 /* MagicCube3DTests-Info.plist */,
+				7976134E193C76D600FF6049 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79761317193C76D600FF6049 /* MagicCube3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79761355193C76D600FF6049 /* Build configuration list for PBXNativeTarget "MagicCube3D" */;
+			buildPhases = (
+				79761314193C76D600FF6049 /* Sources */,
+				79761315193C76D600FF6049 /* Frameworks */,
+				79761316193C76D600FF6049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicCube3D;
+			productName = MagicCube3D;
+			productReference = 79761318193C76D600FF6049 /* MagicCube3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79761343193C76D600FF6049 /* MagicCube3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79761358193C76D600FF6049 /* Build configuration list for PBXNativeTarget "MagicCube3DTests" */;
+			buildPhases = (
+				79761340193C76D600FF6049 /* Sources */,
+				79761341193C76D600FF6049 /* Frameworks */,
+				79761342193C76D600FF6049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7976134A193C76D600FF6049 /* PBXTargetDependency */,
+			);
+			name = MagicCube3DTests;
+			productName = MagicCube3DTests;
+			productReference = 79761344193C76D600FF6049 /* MagicCube3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79761310193C76D600FF6049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = BravoDavid;
+				TargetAttributes = {
+					79761343193C76D600FF6049 = {
+						TestTargetID = 79761317193C76D600FF6049;
+					};
+				};
+			};
+			buildConfigurationList = 79761313193C76D600FF6049 /* Build configuration list for PBXProject "MagicCube3D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7976130F193C76D600FF6049;
+			productRefGroup = 79761319193C76D600FF6049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79761317193C76D600FF6049 /* MagicCube3D */,
+				79761343193C76D600FF6049 /* MagicCube3DTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79761316193C76D600FF6049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761338193C76D600FF6049 /* Shader.fsh in Resources */,
+				79761336193C76D600FF6049 /* Main_iPad.storyboard in Resources */,
+				79761333193C76D600FF6049 /* Main_iPhone.storyboard in Resources */,
+				7976133F193C76D600FF6049 /* Images.xcassets in Resources */,
+				7976132A193C76D600FF6049 /* InfoPlist.strings in Resources */,
+				7976133A193C76D600FF6049 /* Shader.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79761342193C76D600FF6049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761350193C76D600FF6049 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79761314193C76D600FF6049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7976133D193C76D600FF6049 /* ViewController.m in Sources */,
+				79761330193C76D600FF6049 /* AppDelegate.m in Sources */,
+				7976132C193C76D600FF6049 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79761340193C76D600FF6049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79761352193C76D600FF6049 /* MagicCube3DTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7976134A193C76D600FF6049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79761317193C76D600FF6049 /* MagicCube3D */;
+			targetProxy = 79761349193C76D600FF6049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79761328193C76D600FF6049 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79761329193C76D600FF6049 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79761331193C76D600FF6049 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79761332193C76D600FF6049 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		79761334193C76D600FF6049 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79761335193C76D600FF6049 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		7976134E193C76D600FF6049 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7976134F193C76D600FF6049 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79761353193C76D600FF6049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79761354193C76D600FF6049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79761356193C76D600FF6049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicCube3D/MagicCube3D-Prefix.pch";
+				INFOPLIST_FILE = "MagicCube3D/MagicCube3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79761357193C76D600FF6049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicCube3D/MagicCube3D-Prefix.pch";
+				INFOPLIST_FILE = "MagicCube3D/MagicCube3D-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		79761359193C76D600FF6049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicCube3D.app/MagicCube3D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicCube3D/MagicCube3D-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MagicCube3DTests/MagicCube3DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7976135A193C76D600FF6049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MagicCube3D.app/MagicCube3D";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MagicCube3D/MagicCube3D-Prefix.pch";
+				INFOPLIST_FILE = "MagicCube3DTests/MagicCube3DTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79761313193C76D600FF6049 /* Build configuration list for PBXProject "MagicCube3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79761353193C76D600FF6049 /* Debug */,
+				79761354193C76D600FF6049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79761355193C76D600FF6049 /* Build configuration list for PBXNativeTarget "MagicCube3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79761356193C76D600FF6049 /* Debug */,
+				79761357193C76D600FF6049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79761358193C76D600FF6049 /* Build configuration list for PBXNativeTarget "MagicCube3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79761359193C76D600FF6049 /* Debug */,
+				7976135A193C76D600FF6049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79761310193C76D600FF6049 /* Project object */;
+}
