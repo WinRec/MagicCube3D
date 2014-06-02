@@ -151,6 +151,7 @@ GLfloat gCubeVertexData[216] =
     self.effect = [[GLKBaseEffect alloc] init];
     self.effect.light0.enabled = GL_TRUE;
     self.effect.light0.diffuseColor = GLKVector4Make(1.0f, 0.4f, 0.4f, 1.0f);
+    self.preferredFramesPerSecond = 30;
     
     glEnable(GL_DEPTH_TEST);
     
@@ -212,7 +213,7 @@ GLfloat gCubeVertexData[216] =
     
     _modelViewProjectionMatrix = GLKMatrix4Multiply(projectionMatrix, modelViewMatrix);
     
-    _rotation += self.timeSinceLastUpdate * 0.5f;
+    //_rotation += self.timeSinceLastUpdate * 0.5f;
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
@@ -386,6 +387,28 @@ GLfloat gCubeVertexData[216] =
     }
     
     return YES;
+}
+
+// touches
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"time since last update: %f", self.timeSinceLastUpdate);
+    NSLog(@"time since last draw: %f", self.timeSinceLastDraw);
+    NSLog(@"time since last resume: %f", self.timeSinceLastResume);
+        _rotation += 0.1f;
+    //self.paused = !self.paused;
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    _rotation += 0.1f;
+    NSLog(@"time since first resume: %f", self.timeSinceFirstResume);
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    
 }
 
 @end
